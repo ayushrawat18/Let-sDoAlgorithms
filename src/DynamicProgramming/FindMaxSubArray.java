@@ -9,7 +9,7 @@ public class FindMaxSubArray {
 
         // In this array we need to find an subarray where sum is maximum
         //int arr[] = new int[] {13, -2 , -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7 };
-        int arr[] = new int[] { -2, -7 ,-1, -4, -2 , -6};
+        int arr[] = new int[] { 2, -7 ,-11, 4, 2 , 6};
        int sum =  _findMaxSubArray( 0, arr.length - 1, arr);
        System.out.println("Max sum is "+sum);
 
@@ -55,7 +55,5 @@ public class FindMaxSubArray {
         // return max of either (left sum, right sum, left + right)
         return Math.max(Math.max(leftSum, rightSum), leftSum+rightSum);
     }
-
-
 
 }
