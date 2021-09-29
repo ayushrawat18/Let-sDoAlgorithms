@@ -12,10 +12,10 @@ import javax.naming.PartialResultException;
 public class MergeSort {
 
     public static void main(String args[]) {
-        int arr[] = new int[] {9,1,2,8,3,7,74,5};
-        printArray(arr);
+        int arr[] = new int[] {9,1,2,8,3,7,74,5,5};
+        _printArray("Before sorting array ", arr);
         mergeSort(arr, 0, arr.length-1);
-        printArray(arr);
+        _printArray("After sorting array", arr);
     }
 
     public static void mergeSort (int arr[], int left, int right) {
@@ -34,13 +34,13 @@ public class MergeSort {
         int arr1[] = new int[n1];
         int arr2[] = new int[n2];
 
-        for (int i=left; i<n1; i++) {
+        for (int i=0; i<n1; i++) {
             arr1[i] = arr[left + i];
         }
-        for (int i=middle; i<n2; i++) {
+        for (int i=0; i<n2; i++) {
             arr2[i] = arr[middle + 1 + i];
         }
-        int i = 0, j = 0, k =0;
+        int i = 0, j = 0, k =left;
         while (i < n1 && j < n2) {
             if(arr1[i] <= arr2[j]) {
                 arr[k] = arr1[i];
@@ -53,21 +53,21 @@ public class MergeSort {
         }
 
         while (i < n1) {
-            arr[k] = arr[i];
+            arr[k] = arr1[i];
             i++;
             k++;
         }
         while (j < n2) {
-            arr[k] = arr[j];
+            arr[k] = arr2[j];
             j++;
             k++;
         }
     }
 
-    public static void printArray(int arr[]) {
-        System.out.println("Array is ");
-        for (int i = 0; i< arr.length; i++) {
-            System.out.print(" "+arr[i]);
+    public static void _printArray(String msg , int arr[]) {
+        System.out.println(" "+msg+" : ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+ " ");
         }
         System.out.println(" ");
     }
