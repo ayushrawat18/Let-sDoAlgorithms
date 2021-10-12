@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DivideAndConquer;
 
 /**
  * Solution will find the maximum subarray using Divide and Conquer technique
