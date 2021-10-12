@@ -8,10 +8,12 @@ Repo consists of Datastructures and Algorithms problems. You can find the below 
 2. Search Algorithims
    - Linear Search
    - Binary Search
-3. Datastructure usage : Java
+3. Datastructure usage : Collection API Java
 4. Dynamic Programming 
 5. Divide and Conquer : 
       - Maximum sum of a subarray
+
+6. Trees
 
 
 Will keep the above list updated as we move with more and more solutions. 
