@@ -32,7 +32,11 @@ public class ReverseWords {
         return newStr.toString();
     }
 
-//run on O(n2) but space efficient
+    /*run on O(n2) but space efficient
+        Input : I love solving programs
+        Output : I evol gnivlos smargorp
+
+     */
     public static String reverseWordsByStack(String originalStr) {
         Stack<Character> stack = new Stack<>();
         StringBuilder reverseStr = new StringBuilder();

@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
- * Solution will find the maximum subarray using Divide and Conquer technique
+ * Solution will find the maximum sum of subarray using Divide and Conquer technique
  */
 public class FindMaxSubArray {
 
