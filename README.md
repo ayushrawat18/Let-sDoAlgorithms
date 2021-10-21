@@ -1,6 +1,7 @@
 # Let-sDoAlgorithms
 
 Repo consists of Datastructures and Algorithms problems. You can find the below solutions for refrence :
+The repository is work in progress state, many algorithms are in progress mode. However all the solutions are complete.
 
 1. Sorting Algorithms 
    - Insertion sort 
