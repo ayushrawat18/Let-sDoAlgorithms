@@ -10,8 +10,11 @@ The repository is work in progress state, many algorithms are in progress mode. 
    - Linear Search
    - Binary Search
 3. Datastructure usage : Collection API Java
-4. Dynamic Programming 
-5. Divide and Conquer : 
+   * Collection of problems solved in :
+      - Arrays
+      - String 
+5. Dynamic Programming 
+6. Divide and Conquer : 
       - Maximum sum of a subarray
 
 6. Trees
