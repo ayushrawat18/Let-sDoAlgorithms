@@ -3,7 +3,7 @@ package String;
 public class Palindrome {
 
     public  static void main(String args[]) {
-        String str = "worlrow";
+        String str = "abcdefghihgfeddcba";
         System.out.println(checkPalindrome(str));
         System.out.println(checkPalindrome(str, 0));
 
@@ -34,7 +34,7 @@ public class Palindrome {
             if (str1.charAt(index) != str1.charAt(j))
                 return false;
 
-            checkPalindrome(str1, index + 1);
+           return checkPalindrome(str1, index + 1);
         }
         return true;
 
