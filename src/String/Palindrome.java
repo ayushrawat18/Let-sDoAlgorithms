@@ -4,14 +4,14 @@ public class Palindrome {
 
     public  static void main(String args[]) {
         String str = "abcdefghihgfeddcba";
-        System.out.println(checkPalindrome(str));
+       // System.out.println(checkPalindrome(str));
         System.out.println(checkPalindrome(str, 0));
 
     }
 
 
 
-    public static boolean checkPalindrome(String str) {
+    public boolean checkPalindrome(String str) {
 
         int i = 0;
         int j = str.length()-1;
