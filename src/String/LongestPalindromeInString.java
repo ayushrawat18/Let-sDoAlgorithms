@@ -3,7 +3,7 @@ package String;
 public class LongestPalindromeInString {
 
     public static void main(String args[]) {
-        String str = "abcc";
+        String str = "abba";
         String subStr = findLongestPalindrome(str);
         System.out.println(subStr);
     }
