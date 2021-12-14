@@ -1,5 +1,10 @@
 package String;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Queue;
 import java.util.Stack;
 
 public class ReverseStringWithoutWords {
@@ -7,10 +12,10 @@ public class ReverseStringWithoutWords {
 
     public static void main (String args[]) {
 
-        String originalStr = "I love solving programs";
+        String originalStr = "  I love solving programs  ";
         System.out.println("Original String : "+originalStr);
-        String reverseWordsBySpt = reverseWordsByStack(originalStr);
-        System.out.println("Reverse String by spliting : "+reverseWordsBySpt);
+        String reverseWordsBySpt = reverseWords(originalStr);
+        System.out.println("Reverse String by spliting :"+reverseWordsBySpt);
 
     }
 
@@ -42,5 +47,54 @@ public class ReverseStringWithoutWords {
             stb.append(s.pop());
         }
         return stb.toString();
+    }
+
+    public static String reverseWords(String str) {
+
+        Stack<Character> q = new Stack<>();
+        String newStr = "";
+        for (int i = str.length()-1; i >= 0 ; i--) {
+            if(str.charAt(i) == ' ') {
+                while (q.size() > 0) {
+                    newStr= newStr + q.pop();
+                }
+                newStr = newStr + " ";
+            } else {
+                q.add(str.charAt(i));
+            }
+        }
+
+        while (q.size() > 0) {
+            newStr = newStr + q.pop();
+        }
+        return newStr;
+    }
+
+
+    public static String reverseWordsSol(String str) {
+
+        int wordStartIndex = 0;
+        String finalStr = "";
+        List<String> l = new ArrayList<>();
+        boolean last = false;
+        for (int i = 0; i < str.length(); i++) {
+            last = false;
+            if(str.charAt(i) == ' ') {
+                l.add(str.substring(wordStartIndex, i));
+                l.add(" ");
+                wordStartIndex = i;
+                last = true;
+            }
+        }
+
+        if (!last)
+            l.add((str.substring(wordStartIndex, str.length()-1)));
+
+        for (int i= l.size()-1; i>=0; i--) {
+            finalStr = finalStr + l.get(i);
+        }
+
+        return finalStr;
+
     }
 }

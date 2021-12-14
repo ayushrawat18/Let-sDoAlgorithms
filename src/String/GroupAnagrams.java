@@ -2,7 +2,13 @@ package String;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+<<<<<<< Updated upstream
 import java.util.List;
+=======
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+>>>>>>> Stashed changes
 
 public class GroupAnagrams {
 
@@ -18,6 +24,7 @@ public class GroupAnagrams {
 
     private static List<List<String>> groupAnagrams(List<String> anaList) {
 
+<<<<<<< Updated upstream
 
         List<String> sortedWords = new ArrayList<>();
 
@@ -33,6 +40,26 @@ public class GroupAnagrams {
         }
 
 return null;
+=======
+        List<String> sortedWords = new ArrayList<>();
+        for (String str : anaList) {
+            sortedWords.add(sortWord(str));
+        }
+        Map<String, List<String>> anagrams = new HashMap<>();
+
+        for (int i = 0; i<anaList.size(); i++) {
+
+            if(anagrams.containsKey(sortedWords.get(i))) {
+                anagrams.get(sortedWords.get(i)).add(anaList.get(i));
+            } else {
+                List <String> l = new ArrayList<>();
+                l.add(anaList.get(i));
+                anagrams.put(sortedWords.get(i), l);
+            }
+
+        }
+    return new ArrayList<>(anagrams.values());
+>>>>>>> Stashed changes
     }
 
     private static String sortWord(String str) {
