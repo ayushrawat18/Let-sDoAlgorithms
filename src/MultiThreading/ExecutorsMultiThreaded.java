@@ -6,17 +6,13 @@ import java.util.concurrent.Executors;
 public class ExecutorsMultiThreaded {
 
     public static void main(String args[]) {
-
         ExecutorService service = Executors.newFixedThreadPool(10);
         for (int i=0; i<10; i++) {
             service.execute(new Work());
         }
         service.shutdown();
-
         System.out.println("fasdfa");
     }
-
-
 }
 
 
