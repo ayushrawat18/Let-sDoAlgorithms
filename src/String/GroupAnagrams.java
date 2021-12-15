@@ -2,13 +2,9 @@ package String;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-<<<<<<< Updated upstream
-import java.util.List;
-=======
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
->>>>>>> Stashed changes
 
 public class GroupAnagrams {
 
@@ -24,23 +20,6 @@ public class GroupAnagrams {
 
     private static List<List<String>> groupAnagrams(List<String> anaList) {
 
-<<<<<<< Updated upstream
-
-        List<String> sortedWords = new ArrayList<>();
-
-        for (String str : anaList) {
-
-            sortedWords.add(sortWord(str));
-        }
-
-        String theSortedWord = "";
-        for (int i = 0; i<anaList.size(); i++) {
-            theSortedWord = anaList.get(0);
-
-        }
-
-return null;
-=======
         List<String> sortedWords = new ArrayList<>();
         for (String str : anaList) {
             sortedWords.add(sortWord(str));
@@ -59,7 +38,6 @@ return null;
 
         }
     return new ArrayList<>(anagrams.values());
->>>>>>> Stashed changes
     }
 
     private static String sortWord(String str) {
