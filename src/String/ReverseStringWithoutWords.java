@@ -12,9 +12,9 @@ public class ReverseStringWithoutWords {
 
     public static void main (String args[]) {
 
-        String originalStr = "  I love solving programs  ";
+        String originalStr = "I love solving programs";
         System.out.println("Original String : "+originalStr);
-        String reverseWordsBySpt = reverseWords(originalStr);
+        String reverseWordsBySpt = reverseWordsSol(originalStr);
         System.out.println("Reverse String by spliting :"+reverseWordsBySpt);
 
     }
@@ -81,7 +81,6 @@ public class ReverseStringWithoutWords {
             last = false;
             if(str.charAt(i) == ' ') {
                 l.add(str.substring(wordStartIndex, i));
-                l.add(" ");
                 wordStartIndex = i;
                 last = true;
             }
@@ -91,7 +90,7 @@ public class ReverseStringWithoutWords {
             l.add((str.substring(wordStartIndex, str.length()-1)));
 
         for (int i= l.size()-1; i>=0; i--) {
-            finalStr = finalStr + l.get(i);
+            finalStr = finalStr  + l.get(i);
         }
 
         return finalStr;
