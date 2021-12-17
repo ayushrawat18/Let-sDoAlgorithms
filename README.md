@@ -13,11 +13,14 @@ The repository is work in progress state, many algorithms are in progress mode. 
    * Collection of problems solved in :
       - Arrays
       - String 
+      - Stack
 5. Dynamic Programming 
 6. Divide and Conquer : 
       - Maximum sum of a subarray
 
-6. Trees
+7. Algorithms
+      - Kadane's
+       
 
 
 Will keep the above list updated as we move with more and more solutions. 
