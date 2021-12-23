@@ -8,8 +8,8 @@ public class Anagrams {
 
 
     public static void main(String args[]) {
-        String str1 = "hello";
-        String str2 = "elloh";
+        String str1 = "hello i";
+        String str2 = "elloh i";
 
 
         Boolean isAnagrams = checkAnagrams(str1, str2);
