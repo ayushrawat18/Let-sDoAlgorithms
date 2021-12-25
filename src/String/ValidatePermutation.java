@@ -2,6 +2,7 @@ package String;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 public class ValidatePermutation {
@@ -13,6 +14,7 @@ public class ValidatePermutation {
         System.out.println(validatePermutation(str1, str2));
         System.out.println(validatePermutations(str1, str2));
         System.out.println(validatePermutationOptimized(str1, str2));
+
     }
 
     private static boolean validatePermutationOptimized(String str1, String str2) {
