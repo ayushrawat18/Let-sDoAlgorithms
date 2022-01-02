@@ -2,13 +2,20 @@ package Array;
 
 import java.util.Arrays;
 
-public class MinimuMArrayToBeSorted {
+public class MinimumArrayToBeSorted {
 
     public static void main(String args[]) {
         int arr[] = {1, 2, 4, 7, 10, 11, 7, 12, 6, 7, 16, 18, 19};
         int indexArray[] = subarraySort(arr);
         System.out.println("["+indexArray[0]+", "+indexArray[1]+"]");
     }
+
+
+    /*
+        Time : O(nlog(n))
+        Space : O(n) //copying the array
+
+     */
     public static int[] subarraySort(int[] array) {
 
         int sortedArray[] = (Arrays.copyOf(array, array.length));
