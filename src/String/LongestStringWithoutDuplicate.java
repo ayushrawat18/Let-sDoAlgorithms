@@ -7,7 +7,7 @@ import java.util.Set;
 public class LongestStringWithoutDuplicate {
 
     public static void main (String args[]) {
-        String str = "ayushrawat"; // the output should be "ayush"
+        String str = "ayushrawat";
         System.out.println(findLongestSubString(str));
 
     }
