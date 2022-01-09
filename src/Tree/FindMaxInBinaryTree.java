@@ -9,7 +9,7 @@ import java.util.Queue;
 public class FindMaxInBinaryTree {
 
     public static void main(String args[]) {
-        TreePopulateDat tp = new TreePopulateData();
+        TreePopulateData tp = new TreePopulateData();
         TreeNode head = tp.populateTreeData();
         System.out.println("Max Element using post order traversal "+findMaxElementTree(head));
 

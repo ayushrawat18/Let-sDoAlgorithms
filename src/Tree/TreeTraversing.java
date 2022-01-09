@@ -35,7 +35,7 @@ public class TreeTraversing {
      * Left - Node - Right
      * @param node
      */
-    private static void inOrderTraversing(TreeNode node) {
+    public static void inOrderTraversing(TreeNode node) {
         if (node != null) {
             inOrderTraversing(node.getLeft());
             System.out.print(" "+node.getData());;
