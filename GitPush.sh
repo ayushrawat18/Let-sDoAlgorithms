@@ -1,6 +1,8 @@
 echo "Branch name : $1"; 
 echo "Checkin message : $2";
 
+git branch | grep -v "main" | xargs git branch -D
+
 git stash 
 git checkout main
 git pull --rebase
