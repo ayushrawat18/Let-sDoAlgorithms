@@ -5,7 +5,9 @@ The repository is work in progress state, many algorithms are in progress mode. 
 
 1. Sorting Algorithms 
    - Insertion sort 
+   - Bubble sort
    - Merge sort
+   
 2. Search Algorithims
    - Linear Search
    - Binary Search
@@ -14,6 +16,8 @@ The repository is work in progress state, many algorithms are in progress mode. 
       - Arrays
       - String 
       - Stack
+      - Queue
+      - Trees
 5. Dynamic Programming 
 6. Divide and Conquer : 
       - Maximum sum of a subarray
@@ -23,4 +27,4 @@ The repository is work in progress state, many algorithms are in progress mode. 
        
 
 
-Will keep the above list updated as we move with more and more solutions. 
+I will keep the above list updated as we move with more and more solutions. 
