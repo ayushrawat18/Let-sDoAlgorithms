@@ -1,5 +1,8 @@
 package Array;
 
+import com.sun.xml.internal.ws.api.pipe.ClientPipeAssemblerContext;
+import commons.Commons;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -13,18 +16,31 @@ public class MoveElementToTheEnd {
         List<Integer> list = Arrays.asList(arr);
         int toMove = 1;
         moveElementToTheEnd(list, toMove);
+        Commons.printList(list);
+
     }
 
-    public static Integer [] moveElementToTheEnd (List<Integer> list, int toMove) {
+    public static void moveElementToTheEnd (List<Integer> list, int toMove) {
 
         int i = 0;
         int j = list.size() - 1;
 
         while (i < j) {
+            while (list.get(j) == toMove)
+                j--;
 
-            //while
+            if (list.get(i) == toMove) {
+                swap(list, i, j);
+            }
+            i++;
         }
 
-        return new Integer[0];
+
+    }
+
+    private static void swap(List<Integer> list, int index1, int index2) {
+        int temp = list.get(index1);
+        list.set(index1, list.get(index2));
+        list.set(index2, temp);
     }
 }
