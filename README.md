@@ -18,13 +18,17 @@ The repository is work in progress state, many algorithms are in progress mode. 
       - Stack
       - Queue
       - Trees
-5. Dynamic Programming 
-6. Divide and Conquer : 
+5. Recursion   
+   - Do checkout the section of recursion in problem solving. 
+   - Try to build all solutions by yourself, contains medium to advanced level of recursion problem. 
+   - Check solution for reference. 
+6. Dynamic Programming 
+7. Divide and Conquer : 
       - Maximum sum of a subarray
 
-7. Algorithms
+8. Algorithms
       - Kadane's
-       
+
 
 
 I will keep the above list updated as we move with more and more solutions. 
