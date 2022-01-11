@@ -3,7 +3,7 @@ package String;
 public class Palindrome {
 
     public  static void main(String args[]) {
-        String str = "abcdefghihgfeddcba";
+        String str = "hel0ileh";
        // System.out.println(checkPalindrome(str));
         System.out.println(checkPalindrome(str, 0));
 
