@@ -52,7 +52,34 @@ public class PracticeRecursion {
         int[] evenNumArr = new int[] {2,4,6,8, 9};
         System.out.println("Is all numbers even "+checkArrEvens(evenNumArr, 0));
 
+        //{"a":1, "b":2, "c":3, "d": {"e": 9, "f":10}}
+        Map<String, Object> map = new HashMap<>();
+        map.put("a", 1);
+        map.put("b", 2);
+        map.put("c", 3);
+        Map<String, Object> map1 = new HashMap<>();
+        map1.put("e",9);
+        map1.put("f",10);
+        Map<String, Object> map2 = new HashMap<>();
+        map2.put("g",9);
+        map2.put("h",10);
+        map1.put("z", map2);
+        map.put("d", map1);
+        int sum = 0;
+        sum = sumOfMapValues(map, sum);
+        System.out.println("Sum is :"+ sum);
 
+    }
+
+    private static int sumOfMapValues(Map<String, Object> map, int sum) {
+
+        for (String key : map.keySet()) {
+            if (map.get(key) instanceof HashMap)
+                return sumOfMapValues((Map<String, Object>) map.get(key), sum);
+            else
+                sum = sum + (int) map.get(key);
+        }
+        return sum;
     }
 
     private static boolean checkArrEvens(int[] evenNumArr, int startIdx) {
@@ -188,12 +215,6 @@ public class PracticeRecursion {
         else
             return n + findSum(n-1);
     }
-
-
-
-
-
-
 
 
 }
