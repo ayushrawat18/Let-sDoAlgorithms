@@ -13,5 +13,7 @@ git checkout -b "scratch/$1"
 git stash pop
 git add *
 git commit -m "$2"
-git push 
+git push
+
+git push --set-upstream origin scratch/$1
 
