@@ -1,23 +1,21 @@
 package Tree;
 
+import Tree.commons.TreeNode;
+import Tree.commons.TreePopulateData;
+
 import java.util.*;
 
 class FindBranchesSum {
-    // This is the class of the input root. Do not edit it.
-    public static class BinaryTree {
-        int value;
-        BinaryTree left;
-        BinaryTree right;
 
-        BinaryTree(int value) {
-            this.value = value;
-            this.left = null;
-            this.right = null;
-        }
+    public static void main(String args[]) {
+        TreeNode head = new TreePopulateData().populateTreeData();
+        List<Integer> ansSum = branchSums(head);
+        System.out.println(" Sum is "+ansSum.toString());
     }
 
 
-    public static List<Integer> branchSums(BinaryTree root) {
+
+    public static List<Integer> branchSums(TreeNode root) {
 
         List<Integer> branchSumList = new ArrayList<Integer>();
 
@@ -25,20 +23,18 @@ class FindBranchesSum {
         return branchSumList;
     }
 
-    public static void calculateSum(BinaryTree node, int runningSum, List<Integer> branchSumList) {
+    public static void calculateSum(TreeNode node, int runningSum, List<Integer> branchSumList) {
 
-        if (node == null)
-            return ;
 
-        int sum = runningSum + node.value;
-        if(node.left == null && node.right == null) {
-            branchSumList.add(sum);
-            return ;
+        runningSum = runningSum + node.getData();
+        if (node.getLeft() == null && node.getRight() == null) {
+            branchSumList.add(runningSum);
+            return;
         }
 
-        calculateSum(node.left, sum,  branchSumList);
-        calculateSum(node.right, sum,  branchSumList);
-
+            calculateSum(node.getLeft(), runningSum, branchSumList);
+            calculateSum(node.getRight(), runningSum, branchSumList);
+        }
 
     }
-}
+
