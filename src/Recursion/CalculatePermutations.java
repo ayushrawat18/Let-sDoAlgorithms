@@ -3,7 +3,7 @@ package Recursion;
 public class CalculatePermutations {
 
     public static void main(String args[]) {
-        String str = "abc";
+        String str = "abcd";
         permuteStr(str, "");
     }
 
@@ -15,7 +15,7 @@ public class CalculatePermutations {
     private static void permuteStr(String str, String ans) {
 
         if(ans.length() == 3) {
-            System.out.println(ans);
+            System.out.print(" "+ans);
         }
 
         for (int i = 0; i < str.length(); i++) {
