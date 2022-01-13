@@ -1,13 +1,24 @@
 package Recursion;
 
 import java.util.ArrayList;
+
 import java.util.List;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 
 public class StringPartitionPalindrome {
 
     public static void main(String args[]) {
 
         String str = "aabb";
+
+
+        Map<String, Integer> s = new HashMap<>();
+        s.isEmpty();
+
         List<List<String>> ans = new ArrayList<>();
         List<String> current = new ArrayList<>();
 
@@ -23,7 +34,6 @@ public class StringPartitionPalindrome {
             return;
         }
 
-
         for (int i = 0; i < str.length(); i++) {
             String partitionStr = str.substring(0, i+1);
             String remStr = str.substring(i+1);
@@ -31,6 +41,7 @@ public class StringPartitionPalindrome {
             if (isPalindrome(partitionStr)) {
                 current.add(partitionStr);
                 getPalindromicPartition(remStr, ans, current);
+
                 current.remove(current.size()-1);
             }
         }
