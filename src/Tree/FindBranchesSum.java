@@ -25,6 +25,8 @@ class FindBranchesSum {
 
     public static void calculateSum(TreeNode node, int runningSum, List<Integer> branchSumList) {
 
+        if (node == null)
+            return;
 
         runningSum = runningSum + node.getData();
         if (node.getLeft() == null && node.getRight() == null) {
