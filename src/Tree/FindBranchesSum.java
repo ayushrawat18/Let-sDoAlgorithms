@@ -8,7 +8,7 @@ import java.util.*;
 class FindBranchesSum {
 
     public static void main(String args[]) {
-        TreeNode head = new TreePopulateData().populateTreeData();
+        TreeNode head = new TreePopulateData().populateUnBalancedTreeData();
         List<Integer> ansSum = branchSums(head);
         System.out.println(" Sum is "+ansSum.toString());
     }
