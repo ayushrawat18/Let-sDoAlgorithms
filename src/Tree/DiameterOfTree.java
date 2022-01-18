@@ -9,8 +9,9 @@ public class DiameterOfTree {
 
     public static void main(String args[]) {
 
-        TreeNode root = new TreePopulateData().populateTreeData();
+        TreeNode root = new TreePopulateData().populateUnBalancedTreeData();
         System.out.println(findDiameterOfTree(root));
+        System.out.println("diameter "+diameter);
     }
 
     private static int findDiameterOfTree(TreeNode root) {
