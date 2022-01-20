@@ -1,4 +1,4 @@
-package Graph;
+package Graph.commons;
 
 
 public class Vertex {
