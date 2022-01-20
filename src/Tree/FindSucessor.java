@@ -35,6 +35,13 @@ public class FindSucessor {
 
     }
 
+    /**
+     * Getting the in order
+     * L _ N _ R
+     * @param root
+     * @param nodes
+     */
+
     private static void getInOrderNodes(TreeNode root, List<TreeNode> nodes) {
         if (root == null)
             return;
