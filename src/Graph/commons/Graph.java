@@ -4,11 +4,11 @@ import java.util.Stack;
 
 public class Graph {
 
-    private final int maxVertices = 20;
-    private Vertex vertexList[];
-    private int adjMatrix[][];
-    private int vertexCount;
-    private Stack stack;
+    final int maxVertices = 20;
+    public Vertex vertexList[];
+    public int adjMatrix[][];
+    public int vertexCount;
+    public Stack<Integer> stack;
 
     public Graph(){
         vertexCount =0;
@@ -37,7 +37,7 @@ public class Graph {
     }
 
     public void displayVertex(int vIdx) {
-        System.out.println(vertexList[vIdx].label);
+        System.out.print("->"+vertexList[vIdx].label);
     }
 
     /**
@@ -55,8 +55,9 @@ public class Graph {
      */
     public void createGraphUsingAdjMatrix() {
         this.addVertex('a');
-        this.addVertex('b');
+
         this.addVertex('c');
+        this.addVertex('b');
         this.addVertex('d');
         this.addVertex('e');
         this.addVertex('f');
