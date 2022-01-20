@@ -1,4 +1,4 @@
-package Graph;
+package Graph.commons;
 
 import java.util.Stack;
 
@@ -38,6 +38,36 @@ public class Graph {
 
     public void displayVertex(int vIdx) {
         System.out.println(vertexList[vIdx].label);
+    }
+
+    /**
+     * Create a graph of this structure using adj matrix
+     *
+     * a ----- e \
+     * |		|  \
+     * |		|   \
+     * |		f	 d
+     * |		|  /
+     * |		| /
+     * b ----- c/
+     *
+     * PS : Did my best to represent the graph :)
+     */
+    public void createGraphUsingAdjMatrix() {
+        this.addVertex('a');
+        this.addVertex('b');
+        this.addVertex('c');
+        this.addVertex('d');
+        this.addVertex('e');
+        this.addVertex('f');
+
+        this.addEdge(0, 1);
+        this.addEdge(0, 4);
+        this.addEdge(1, 2);
+        this.addEdge(2, 3);
+        this.addEdge(2, 5);
+        this.addEdge(4, 3);
+        this.addEdge(4, 5);
     }
 
 
