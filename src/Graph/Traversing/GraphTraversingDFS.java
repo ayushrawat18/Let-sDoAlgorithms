@@ -1,7 +1,8 @@
-package Graph;
+package Graph.Traversing;
 
-import Graph.commons.Graph;
-import Graph.commons.Vertex;
+import Graph.commons.AdjMatrix.Graph;
+
+import java.util.Stack;
 
 public class GraphTraversingDFS extends Graph {
 
@@ -20,6 +21,7 @@ public class GraphTraversingDFS extends Graph {
      * once all the elements of stack is empty traversing is completed
      */
     public void dfs() {
+        Stack<Integer> stack = new Stack<>();
         vertexList[0].isVisted = true; //starting dfs from the first node
         displayVertex(0);
         stack.push(0);

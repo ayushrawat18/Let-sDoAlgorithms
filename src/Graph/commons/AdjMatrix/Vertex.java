@@ -1,4 +1,4 @@
-package Graph.commons;
+package Graph.commons.AdjMatrix;
 
 
 public class Vertex {

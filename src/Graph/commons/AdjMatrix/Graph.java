@@ -1,4 +1,4 @@
-package Graph.commons;
+package Graph.commons.AdjMatrix;
 
 import java.util.Stack;
 
@@ -8,7 +8,7 @@ public class Graph {
     public Vertex vertexList[];
     public int adjMatrix[][];
     public int vertexCount;
-    public Stack<Integer> stack;
+
 
     public Graph(){
         vertexCount =0;
@@ -19,7 +19,6 @@ public class Graph {
                 adjMatrix[i][j] = 0;
             }
         }
-        stack = new Stack();
     }
 
     public void addVertex(char label) {
@@ -55,9 +54,8 @@ public class Graph {
      */
     public void createGraphUsingAdjMatrix() {
         this.addVertex('a');
-
-        this.addVertex('c');
         this.addVertex('b');
+        this.addVertex('c');
         this.addVertex('d');
         this.addVertex('e');
         this.addVertex('f');
@@ -70,6 +68,5 @@ public class Graph {
         this.addEdge(4, 3);
         this.addEdge(4, 5);
     }
-
 
 }
