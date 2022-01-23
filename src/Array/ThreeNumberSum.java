@@ -3,6 +3,7 @@ package Array;
 import commons.Commons;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -14,25 +15,28 @@ public class ThreeNumberSum {
     public static void main(String args[]) {
 
         int arr[] = new int[]{12, 11, 1, 2, -6, 5, -8, 6};
-       int ans[] =  findTriplets(arr ,0 );
-        Commons.printArray(ans);
+       List<List<Integer>> list =  findTriplets(arr ,0 );
+        System.out.println(list);
 
     }
 
-    private static int[] findTriplets(int[] arr, int sum) {
 
+    private static List<List<Integer>> findTriplets(int[] arr, int sum) {
+
+        List<List<Integer>> arrList = new ArrayList<>();
         for (int i=0; i<arr.length-2; i++) {
             int currentNumber = arr[i];
             Set<Integer> set = new HashSet<>();
             for (int j = i+1; j < arr.length; j++) {
                 int diff = sum - (currentNumber + arr[j]);
                 if (set.contains(diff)) {
-                    return new int[]{currentNumber, arr[j], diff - sum};
+                    arrList.add(Arrays.asList(currentNumber, arr[j], diff-sum));
+
                 } else
                     set.add(arr[j]);
             }
         }
-            return new int[0];
+            return arrList;
         }
     }
 
