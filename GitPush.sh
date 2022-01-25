@@ -9,7 +9,6 @@ git checkout main
 git pull --rebase
 
 git branch | grep -v "main" | xargs git branch -D
-git branch -r | grep 'origin' | grep -v 'main$' | grep -v HEAD | cut -d/ -f2- | while read line; do git push origin :heads/$line; done;
 
 echo "Creating branch : $1"
 git checkout -b "scratch/$1"
