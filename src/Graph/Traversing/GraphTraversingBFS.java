@@ -9,7 +9,7 @@ public class GraphTraversingBFS extends Graph {
 
     public static void main(String args[]) {
         GraphTraversingBFS gr = new GraphTraversingBFS();
-        gr.createGraphUsingAdjMatrix(); //Preparing graph for traversing
+        gr.createGraphUsingAdjMatrix(); //Preparing graph for traversing Its using Adj Matrix
         gr.bfs();
     }
 
