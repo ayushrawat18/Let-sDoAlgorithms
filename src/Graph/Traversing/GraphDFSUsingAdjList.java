@@ -30,6 +30,7 @@ public class GraphDFSUsingAdjList extends Graph {
         }
     }
 
+
     private int getAdjVertex(int element) {
         for (int i = 0; i < edges.get(element).size(); i++) {
             if (vertexList.get(edges.get(element).get(i)).isVisted == false)
