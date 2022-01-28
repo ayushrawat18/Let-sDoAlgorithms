@@ -30,7 +30,7 @@ public class FindNodesDistance {
 
     public static void main(String args[]) {
         TreeNode root = new TreePopulateData().populateUnBalancedTreeData();
-        findNodesAtKDistance(root, 1, 2);
+        findNodesAtKDistance(root, 3, 2);
     }
 
     private static void findNodesAtKDistance(TreeNode root, int nodeValue, int distance) {
