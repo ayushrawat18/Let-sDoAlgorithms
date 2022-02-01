@@ -5,10 +5,10 @@ import Tree.commons.TreePopulateData;
 
 public class HeightBlancedTree {
 
-    static  boolean isHeightBal = false;
+    static  boolean isHeightBal = true;
     public static void main(String args[]) {
 
-        TreeNode root = new TreePopulateData().populateUnBalancedTreeData();
+        TreeNode root = new TreePopulateData().populateTreeData();
         System.out.println(isHeightBalanced(root));
         System.out.println(isHeightBal);
 
@@ -27,7 +27,7 @@ public class HeightBlancedTree {
         else
             isHeightBal = false;
 
-        return Math.max(left, right)+1;
+        return isHeightBal ? Math.max(left, right)+1 : -1;
 
     }
 }
