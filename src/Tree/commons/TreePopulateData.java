@@ -23,6 +23,14 @@ public class TreePopulateData {
         return head;
     }
 
+    public TreeNode populateKTreeData() {
+
+        TreeNode node2 = new TreeNode(2, null, null);
+        TreeNode head = new TreeNode(1,node2, null);
+
+        return head;
+    }
+
 
     /*
        Tree structure of this kind will be populated
