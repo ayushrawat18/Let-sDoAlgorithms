@@ -25,8 +25,10 @@ public class TreePopulateData {
 
     public TreeNode populateKTreeData() {
 
-        TreeNode node2 = new TreeNode(2, null, null);
-        TreeNode head = new TreeNode(1,node2, null);
+        TreeNode node7 = new TreeNode(7,null, null );
+        TreeNode node6 = new TreeNode(6,null, null );
+        TreeNode head = new TreeNode(3, node6, node7);
+
 
         return head;
     }
