@@ -7,10 +7,10 @@ import Tree.commons.TreePopulateData;
 public class FindTreeAncestors {
 
     public static void main(String[] args) {
-        TreeNode node = new TreePopulateData().populateTreeData();
-       // findTreeAncestors(node, 7);
+        TreeNode node = new TreePopulateData().populateUnBalancedTreeData();
+        //findTreeAncestors(node, 7);
 
-        System.out.println(findLCTreeAncestors(node, 3,4).getData());
+        System.out.println(findLCTreeAncestors(node, 7,8).getData());
 
     }
 
@@ -35,24 +35,23 @@ public class FindTreeAncestors {
        4  5 6  7
 
      */
-    private static TreeNode findLCTreeAncestors(TreeNode root, int data1, int data2) {
+    private static TreeNode findLCTreeAncestors(TreeNode node, int node1, int node2) {
 
-        if (root == null)
+        if (node == null)
             return null;
 
-        if (root.getData() == data1 || root.getData() == data2)
-            return root;
+        if (node.getData() == node1 || node.getData() == node2)
+            return node;
 
-        TreeNode left = findLCTreeAncestors(root.getLeft(), data1, data2);
-        TreeNode right = findLCTreeAncestors(root.getRight(), data1, data2);
+        TreeNode left = findLCTreeAncestors(node.getLeft(), node1, node2);
+        TreeNode right = findLCTreeAncestors(node.getRight(), node1, node2);
 
-        if (left != null && right != null)
-            return root;
+        if (left != null && right !=null)
+            return node;
 
-        TreeNode lca = left !=null ? left : right;
+        TreeNode lca = left != null ? left : right;
 
         return lca;
-
     }
 
 }
