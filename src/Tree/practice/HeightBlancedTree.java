@@ -8,7 +8,7 @@ public class HeightBlancedTree {
     static  boolean isHeightBal = true;
     public static void main(String args[]) {
 
-        TreeNode root = new TreePopulateData().populateTreeData();
+        TreeNode root = new TreePopulateData().populateUnBalancedTreeData();
         System.out.println(isHeightBalanced(root));
         System.out.println(isHeightBal);
 
