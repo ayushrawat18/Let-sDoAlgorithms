@@ -5,14 +5,14 @@ import Tree.commons.TreePopulateData;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Deprecated
 public class FindNodesAtKDist {
 
 
     public static void main(String args[]) {
 
-        TreeNode root = new TreePopulateData().populateTreeData();
-        findElementsAtKDistance(root, 3, 0);
+        TreeNode root = new TreePopulateData().populateUnBalancedTreeData();
+        findElementsAtKDistance(root, 6, 2);
     }
 
     private static void findElementsAtKDistance(TreeNode root, int nodeV, int distance) {
