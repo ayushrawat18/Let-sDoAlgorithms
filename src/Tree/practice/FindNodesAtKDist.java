@@ -4,7 +4,10 @@ import Tree.commons.TreeNode;
 import Tree.commons.TreePopulateData;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @Deprecated
 public class FindNodesAtKDist {
 
@@ -33,6 +36,8 @@ public class FindNodesAtKDist {
      */
     private static void findNodesAtDistanceK(TreeNode node, int currentDis, int distance, List<Integer> ans) {
 
+        Map<Integer, Integer> co = new HashMap<>();
+        co.values();
         if (node == null)
             return;
         if (currentDis == distance) {
