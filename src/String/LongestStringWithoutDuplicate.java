@@ -7,13 +7,13 @@ import java.util.Set;
 public class LongestStringWithoutDuplicate {
 
     public static void main (String args[]) {
-        String str = "ayushrawat";
+        String str = "pwwkew";
         System.out.println(findLongestSubString(str));
 
     }
 
     /*
-
+        This is the brute force approach solution runs on O(n2) | Space : O(n)
      */
     public static String findLongestSubString(String str) {
         StringBuilder longestStr = new StringBuilder();
@@ -40,5 +40,16 @@ public class LongestStringWithoutDuplicate {
         return false;
     }
 
+/***
+ * We will solve this problem in
+ * O(n), using two pointer approach
+ */
+
+
+public String findLongestSubStr(String str) {
+
+
+    return null;
+}
 
 }
