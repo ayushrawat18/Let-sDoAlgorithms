@@ -27,9 +27,9 @@ public class DistanceBetweenTwoNodes {
     public static void main(String args[]) {
 
         TreeNode node = new TreePopulateData().populateUnBalancedTreeData();
-        TreeNode lca = findLCA(node, 7, 8);
+        TreeNode lca = findLCA(node, 7, 9);
         int dis1 = findDistance(lca, 7, 0);
-        int dis2 = findDistance(lca, 8, 0);
+        int dis2 = findDistance(lca, 9, 0);
         System.out.println(dis1+dis2);
     }
 
