@@ -7,7 +7,7 @@ package DynamicProgramming;
  */
 public class ClimbStairs {
     public static void main(String args[]) {
-        int stairs = 3;
+        int stairs = 10;
         int dp[] = new int[stairs + 1];
         dp[0] = 1;
         dp[1] = 1;

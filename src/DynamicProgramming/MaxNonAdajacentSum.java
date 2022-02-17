@@ -3,7 +3,7 @@ package DynamicProgramming;
 public class MaxNonAdajacentSum {
 
     public static void main(String args[]) {
-        int arr[] = {75, 105, 120, 75, 90, 135};
+        int arr[] = {-1,9,-8,-90,-88};
         //[75, 105, 75+120, 120+75, ..]
 
        System.out.println( findMaxSumNonAdjacent(arr));

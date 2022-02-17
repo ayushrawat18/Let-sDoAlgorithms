@@ -14,8 +14,7 @@ public class MinimumCostStairs {
 
     private static int findMinimumCost(Integer[] arr) {
 
-        List<Integer> list = (List<Integer>) Arrays.asList(arr);
-       // list.add(0);
+
         Integer[] cost = Arrays.copyOf(arr,arr.length+1);
         for (int i = arr.length-3; i >=0 ; i--) {
             cost[i] = Math.min(cost[i]+cost[i+1], cost[i]+cost[i+2]);
