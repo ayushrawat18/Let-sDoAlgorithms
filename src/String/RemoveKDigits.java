@@ -22,14 +22,13 @@ public class RemoveKDigits {
 
             char c = num.charAt(i);
             // we found a peak in the following condition
-            if (!nums.isEmpty()  && k > 0 && nums.peek() > c) {
+            while (!nums.isEmpty()  && k > 0 && nums.peek() > c) {
                 nums.pop();
-                nums.push(num.charAt(i));
                 k --;
-                continue;
             }
-            if (c != 0)
-                nums.push(num.charAt(i));
+
+                if (!nums.isEmpty() || c != '0')
+                    nums.push(num.charAt(i));
         }
 
 
@@ -44,7 +43,7 @@ public class RemoveKDigits {
         while (!nums.isEmpty())
             ans.append(nums.pop());
 
-        Integer s = Integer.valueOf(ans.reverse().toString());
-        return String.valueOf(s);
+
+        return ans.reverse().toString();
     }
 }
