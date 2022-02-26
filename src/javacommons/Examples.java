@@ -15,7 +15,7 @@ public class Examples {
         System.out.println(Integer.valueOf(ex1));
 
         //intializing two diamensional array
-        int arr[][] = new int[10][2];
+        int arr[][] = new int[10][20];
         System.out.println(arr[0].length); // rows
         System.out.println(arr.length); // columns
 
