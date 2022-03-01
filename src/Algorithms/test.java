@@ -11,7 +11,7 @@ public class test {
         arr.add(2);
         arr.add(3);
 
-        findTotalPower(arr);
+        System.out.println(findTotalPower(arr));
     }
 
     public static int findTotalPower(List<Integer> power) {
@@ -23,8 +23,7 @@ public class test {
             int curMin = power.get(i);
             for(int j=i; j<power.size(); j++) {
                 curMin = Math.min(curMin, power.get(j));
-                int currPower = curMin * sum.get(j);
-                System.out.println(currPower);
+                int currPower = curMin * sum.get(j-i);
                 totalSum = totalSum + currPower;
             }
         }
