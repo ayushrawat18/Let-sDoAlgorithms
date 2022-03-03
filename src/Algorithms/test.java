@@ -12,6 +12,7 @@ public class test {
         arr.add(3);
 
         System.out.println(findTotalPower(arr));
+
     }
 
     public static int findTotalPower(List<Integer> power) {
