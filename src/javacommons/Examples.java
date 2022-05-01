@@ -1,5 +1,9 @@
 package javacommons;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Examples {
 
 
@@ -34,7 +38,10 @@ public class Examples {
             System.out.println(fg[i][0]);
         }
 
+        System.out.print("Sort a two dimensional array or arraylist ");
+        //intervals - is 2d array
 
+        Arrays.sort(fg, (a, b) -> Integer.compare(a[0], b[0]));
 
         
     }
