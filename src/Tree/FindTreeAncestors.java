@@ -3,6 +3,9 @@ package Tree;
 import Tree.commons.TreeNode;
 import Tree.commons.TreePopulateData;
 
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+
 
 public class FindTreeAncestors {
 
@@ -40,6 +43,8 @@ public class FindTreeAncestors {
         if (node == null)
             return null;
 
+
+        LinkedHashMap<Integer, Integer> r = new LinkedHashMap<>();
         if (node.getData() == node1 || node.getData() == node2)
             return node;
 

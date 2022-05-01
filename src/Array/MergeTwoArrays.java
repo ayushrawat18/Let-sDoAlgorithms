@@ -18,11 +18,13 @@ public class MergeTwoArrays {
 
         //merge two arrays without taking extra array
 
-        int arr[] = {1,2,3,0,0,0};
-        int brr[] = {2,5,6};
+        int arr[] = {1,3,5,0,0,0};
+        int brr[] = {2,4,6};
         mergeArraysWithoutExtraSpace(arr, brr, 3, 3);
     }
 
+    //~Time : O(n+m)
+    //~Space : 1
     private static void mergeArraysWithoutExtraSpace(int[] arr, int[] brr, int m, int n) {
         int i= m-1, j=n-1, k = n+m-1;
 

@@ -10,6 +10,8 @@ public class LongestStringWithoutDuplicate {
         String str = "pwwkew";
         System.out.println(findLongestSubString(str));
 
+        int[][] arr = { { 1, 2 , 3}, { 4, 5, 6 } };
+        int first[] = arr[0];
     }
 
     /*

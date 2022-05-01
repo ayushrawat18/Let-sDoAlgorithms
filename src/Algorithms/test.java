@@ -1,7 +1,10 @@
 package Algorithms;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class test {
 
@@ -12,7 +15,9 @@ public class test {
         arr.add(3);
 
         System.out.println(findTotalPower(arr));
-
+        Character c[] = {'i', 'j'};
+        List<Character> ch = Arrays.asList(c);
+        System.out.println(ch);
     }
 
     public static int findTotalPower(List<Integer> power) {
