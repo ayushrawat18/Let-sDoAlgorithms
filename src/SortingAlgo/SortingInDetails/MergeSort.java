@@ -3,6 +3,7 @@ package SortingAlgo.SortingInDetails;
 import commons.Commons;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MergeSort {
 
@@ -30,6 +31,7 @@ public class MergeSort {
         mergeSortHelper(arr, mid+1, endIdx);
 
         ArrayList<Integer> aux = new ArrayList<>();
+
         int i = startIdx, j = mid + 1;
         while (i <= mid && j <= endIdx) {
             if (arr[i] <= arr[j]) {
