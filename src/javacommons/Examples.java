@@ -29,10 +29,10 @@ public class Examples {
 
         System.out.println("Two Dimensional ");
         //two dimensional array
-        int fg[] [] = {{1,2,3},
-                        {1,2,3},
-                        {1,2,3},
-                        {1,2,3}};
+        int fg[] [] = {{90,2,3},
+                        {6,2,3},
+                        {7,2,3},
+                        {9,2,3}};
 
         for (int i=0; i<fg.length; i++) {
             System.out.println(fg[i][0]);
@@ -42,6 +42,14 @@ public class Examples {
         //intervals - is 2d array
 
         Arrays.sort(fg, (a, b) -> Integer.compare(a[0], b[0]));
+
+        for (int i=0; i<fg.length; i++) {
+            for (int j = 0; j < fg[0].length; j++) {
+                System.out.println(fg[i][j]);
+            }
+
+        }
+
 
         
     }
