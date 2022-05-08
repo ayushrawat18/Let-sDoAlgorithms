@@ -47,7 +47,6 @@ public class TopKElementsUsingHeap {
             heap.offer(p);
         }
 
-        
         return (ArrayList<Integer>) Arrays.asList((Integer[]) heap.toArray());
     }
 
