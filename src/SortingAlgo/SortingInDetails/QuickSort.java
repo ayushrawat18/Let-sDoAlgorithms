@@ -17,7 +17,6 @@ public class QuickSort {
             return;
 
         int pivot = new Random().nextInt((end-start)) + start ;
-
         //lomoto's partition - move pivot to extreme left from where partition has started
         swap(start, pivot, arr);
         int smaller = start;
