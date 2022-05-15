@@ -1,9 +1,15 @@
 package Recursion;
 
+import com.sun.tools.javac.util.StringUtils;
+
+import java.util.ArrayList;
+
 public class AllThreeBinaryDigits {
 
     public static void main(String args[]) {
 
+        ArrayList<Character> pChar = new ArrayList<>();
+        String.valueOf(pChar);
         bs("", 2);
     }
 
