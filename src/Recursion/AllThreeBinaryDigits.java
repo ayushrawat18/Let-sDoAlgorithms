@@ -10,18 +10,33 @@ public class AllThreeBinaryDigits {
 
         ArrayList<Character> pChar = new ArrayList<>();
         String.valueOf(pChar);
-        bs("", 2);
+        //bs("", 4);
+        back("", 3);
     }
 
     private static void bs(String res, int n) {
         if (n == 0)
             System.out.println(res);
         else {
-            bs(res + "h", n - 1);
-            bs(res + "6", n - 1);
+            bs(res + "0", n - 1);
+            bs(res + "1", n - 1);
         }
     }
 
+
+    private static void back(String res, int k) {
+        if (res.length() == 3) {
+            System.out.println(res);
+            return;
+        }
+        else {
+            for (int i = 0; i < 4; i++) {
+                back(res + i, k - 1);
+            }
+
+
+        }
+    }
 
 
 }
