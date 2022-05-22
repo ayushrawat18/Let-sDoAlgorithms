@@ -15,7 +15,7 @@ public class ReverseArrayInplace {
 
     /**
      * Time is O(n)
-     * Space O(1)
+     * Space : O(1)
      * @param arr
      */
     private static void reverseArrayInplace(char[] arr) {
