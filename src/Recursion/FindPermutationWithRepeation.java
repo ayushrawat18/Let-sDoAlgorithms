@@ -1,6 +1,7 @@
 package Recursion;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -14,7 +15,10 @@ public class FindPermutationWithRepeation {
 
         List<List<Integer>> answer = new ArrayList<>();
         List<Integer> currPer = new ArrayList<>();
-        generatePermutaion(arr, 0, currPer,  answer);
+        //generatePermutaion(arr, 0, currPer,  answer);
+
+        Arrays.sort(arr);
+        generatePermutaionWithoutAdditionalSpace(arr, 0, currPer,  answer);
         System.out.println(answer);
     }
 
@@ -44,4 +48,25 @@ public class FindPermutationWithRepeation {
         str[idx1] = str[idx2];
         str[idx2] = temp;
     }
+
+    private static void generatePermutaionWithoutAdditionalSpace(int[] arr, int idx, List<Integer> slate, List<List<Integer>> answer) {
+        if (idx == arr.length) {
+            answer.add(new ArrayList<>(slate));
+            return;
+        } else {
+            Set<Integer> s = new HashSet<>();
+            for (int i = idx ; i < arr.length; i++) {
+                if (arr[i] == arr[i+1]) {
+                    continue;
+                } else {
+                    swap(idx, i, arr);
+                    slate.add(arr[idx]);
+                    generatePermutaionWithoutAdditionalSpace(arr, idx+1, slate, answer);
+                    slate.remove(slate.size()-1);
+                    swap(idx, i, arr);
+                }
+            }
+        }
+    }
+
 }
