@@ -19,7 +19,7 @@ public class TreeTraversing {
         //In order traversing in tree
         inOrderTraversing(node);
 
-
+        boolean bitsIsAvailable[] = new boolean[1000];
         System.out.println("\nPost order traversing ");
         //In order traversing in tree
         postOrderTraversing(node);
