@@ -1,12 +1,23 @@
 package String;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class LongestPalindromeInString {
 
     public static void main(String args[]) {
-        String str = "ddabbad";
-        String subStr = findLongestPalindrome(str); // O(n3)
-        System.out.println(longestPalindrome(str)); //O(n2)
-        System.out.println(subStr);
+//        String str = "ddabbad";
+//        String subStr = findLongestPalindrome(str); // O(n3)
+//        System.out.println(longestPalindrome(str)); //O(n2)
+//        System.out.println(subStr);
+
+
+        Set<Character> s = new HashSet<>();
+        s.add('c');
+        s.add('d');
+
     }
 
     public static String findLongestPalindrome(String str) {

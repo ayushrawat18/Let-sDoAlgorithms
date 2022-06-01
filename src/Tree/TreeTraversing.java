@@ -6,6 +6,8 @@ import Tree.commons.TreePopulateData;
 import java.util.ArrayDeque;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.WeakHashMap;
+import java.util.concurrent.DelayQueue;
 
 public class TreeTraversing {
     public static void main(String args[]) {
@@ -18,6 +20,7 @@ public class TreeTraversing {
         System.out.println("\nIn order traversing ");
         //In order traversing in tree
         inOrderTraversing(node);
+
 
         boolean bitsIsAvailable[] = new boolean[1000];
         System.out.println("\nPost order traversing ");

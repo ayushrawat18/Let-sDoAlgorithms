@@ -11,9 +11,9 @@ public class FindTreeAncestors {
 
     public static void main(String[] args) {
         TreeNode node = new TreePopulateData().populateUnBalancedTreeData();
-        //findTreeAncestors(node, 7);
+        findTreeAncestors(node, 8);
 
-        System.out.println(findLCTreeAncestors(node, 7,8).getData());
+        //System.out.println(findLCTreeAncestors(node, 7,8).getData());
 
     }
 
