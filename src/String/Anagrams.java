@@ -11,7 +11,6 @@ public class Anagrams {
         String str1 = "hello i";
         String str2 = "elloh i";
 
-
         Boolean isAnagrams = checkAnagrams(str1, str2);
         Boolean isAnagram =  checkStringsAnagrams(str1, str2);
 
