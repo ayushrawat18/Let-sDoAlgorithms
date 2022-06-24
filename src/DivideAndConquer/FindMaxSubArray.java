@@ -10,7 +10,6 @@ import java.util.Set;
 public class FindMaxSubArray {
 
     public static void main(String args[]) {
-
         // In this array we need to find an subarray where sum is maximum
         //int arr[] = new int[] {13, -2 , -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7 };
         int arr[] = new int[] { 2, -7 ,-11, 4, 2 , 6};
