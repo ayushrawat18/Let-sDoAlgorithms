@@ -18,7 +18,6 @@ public class TopKElementsUsingHeap {
         Map<Integer, Pair> map = new HashMap<>();
 
         for (int i = 0; i < arr.length; i++) {
-
             if (map.containsKey(arr[i])) {
                 Pair temp = map.get(arr[i]);
                 temp.occurence = temp.occurence + 1;
@@ -39,6 +38,7 @@ public class TopKElementsUsingHeap {
                     return -1;
             }
         });
+
 
         for (Pair p : map.values()) {
             if (heap.size() == k) {
