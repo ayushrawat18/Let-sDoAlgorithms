@@ -1,13 +1,16 @@
 package Recursion;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class FindAllBrackets {
     public static void main(String args[]) {
-        int n = 3;
+        int n = 4;
         ArrayList<String> answer = new ArrayList<>();
         helper(n, 0, 0, "", answer);
         System.out.println(answer);
+
     }
 
     private static void helper(int n, int openBracketsCount, int closeBracketsCount, String result, ArrayList<String> answer) {

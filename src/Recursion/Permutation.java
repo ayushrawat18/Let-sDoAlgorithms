@@ -9,21 +9,21 @@ public class Permutation {
     public static void main(String args[]) {
         List<String> answer = new ArrayList<>();
         System.out.println("Binary strings of length n");
-        permutationRepetationAllowed(3, "");
+        //permutationRepetationAllowed(3, "");
 
         System.out.println("Decimal strings of length n");
-        permutationDecimalStrings(5, "", answer);
+        //permutationDecimalStrings(5, "", answer);
         System.out.println(answer);
 
 
 //        //Repeatation is not allowed
-//        System.out.println("Binary strings of length n duplicate not allowed ");
-//        ArrayList<Integer> arr = new ArrayList<>();
-//        arr.add(0);
-//        arr.add(1);
-//        arr.add(2);
-//
-//        permutationRepetationNotAllowed("abc", "");
+        System.out.println("Binary strings of length n duplicate not allowed ");
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(0);
+        arr.add(1);
+        arr.add(2);
+
+        permutationRepetationNotAllowed("abc", "");
 
     }
 
