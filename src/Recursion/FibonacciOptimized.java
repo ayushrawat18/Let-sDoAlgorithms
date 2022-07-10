@@ -87,9 +87,6 @@ public class FibonacciOptimized {
         arr[0] = 0;
         arr[1] = 1;
 
-        Set<Integer> s ;
-        s.cl
-
         for (int i = 2; i < n; i++) {
             if (i%3 == 0) {
                 

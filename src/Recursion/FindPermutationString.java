@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class FindPermutationString {
     public static void main(String args[]) {
-        String str = "123";
+        String str = "121";
         ArrayList<String> answer = new ArrayList<>();
         findPermutation(str.toCharArray(), 0, answer, new StringBuilder());
         System.out.println(answer);
